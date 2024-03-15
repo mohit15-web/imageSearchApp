@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: radial-gradient(circle at center center, transparent,rgb(255,255,255)),linear-gradient(309deg, rgba(90, 90, 90,0.05) 0%, rgba(90, 90, 90,0.05) 50%,rgba(206, 206, 206,0.05) 50%, rgba(206, 206, 206,0.05) 100%),linear-gradient(39deg, rgba(13, 13, 13,0.05) 0%, rgba(13, 13, 13,0.05) 50%,rgba(189, 189, 189,0.05) 50%, rgba(189, 189, 189,0.05) 100%),linear-gradient(144deg, rgba(249, 249, 249,0.05) 0%, rgba(249, 249, 249,0.05) 50%,rgba(111, 111, 111,0.05) 50%, rgba(111, 111, 111,0.05) 100%),linear-gradient(166deg, rgba(231, 231, 231,0.05) 0%, rgba(231, 231, 231,0.05) 50%,rgba(220, 220, 220,0.05) 50%, rgba(220, 220, 220,0.05) 100%),linear-gradient(212deg, rgba(80, 80, 80,0.05) 0%, rgba(80, 80, 80,0.05) 50%,rgba(243, 243, 243,0.05) 50%, rgba(243, 243, 243,0.05) 100%),radial-gradient(circle at center center, hsl(107,19%,100%),hsl(107,19%,100%));
+            /* background-repeat: no-repeat; */
+            /* height: 100vh; */
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center font-sans flex-col ">
+    <div class="w-[800px] flex justify-center items-center flex-col">
+        <h1 class="text-[70px] m-3">
+            Image Search App
+        </h1>
+        <div class="m-5 flex gap-2">
+            <input id="inputText" type="text" placeholder="Search for images..."
+                class="text-[20px] w-[400px] h-[50px] p-5 border-8">
+            <button id="btn" class="w-[100px] h-[55px] text-[20px] bg-green-500 rounded-md text-slate-50 font-bold">Search</button>
+        </div>
+
+    </div >
+    <div class="w-[1000px] flex justify-center items-center flex-col">
+        <div id="imageContainer" class="flex flex-wrap gap-4">  </div>
+        <button id="showBtn" class="text-[20px] bg-green-500 p-5 m-10 hidden rounded-md text-slate-50 font-bold">Show More</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
